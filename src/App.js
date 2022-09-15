@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import './scss/_base.scss';
+import { useState } from 'react';
+import Home from './pages/Home';
+import Navbar from './pages/Navbar';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HashRouter basename="/">
+        <Navbar isNavExpanded={isNavExpanded} setIsNavExpanded={setIsNavExpanded} />
+        <Routes>
+          <Route path="/" element={<Home isBlur={isNavExpanded}/>} />
+        </Routes>
+      </HashRouter>
     </div>
   );
 }
