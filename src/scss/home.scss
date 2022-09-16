@@ -24,7 +24,6 @@
       align-items: center;
       cursor: pointer;
       position: relative;
-      z-index: 1;
 
       & p {
         margin: 0;
@@ -86,10 +85,13 @@
 
 @media screen and (max-width: 768px) {
   .home {
-    backdrop-filter: brightness(.9);
     background-size: math.div(579, 1024) * 100vh;
     & h1 {
       font-size: 2rem;
+    }
+
+    & div {
+      margin-bottom: 60px;
     }
   }
 }
