@@ -1,0 +1,17 @@
+@use 'base';
+
+.team {
+  @include base.container;
+  padding: 0.5rem 1rem;
+
+  & h1 {
+    font-family: base.$font-heading;
+    font-size: base.$font-size-h;
+    font-weight: 400;
+    margin-top: 100px;
+  }
+
+  & img {
+    width: 100px;
+  }
+}

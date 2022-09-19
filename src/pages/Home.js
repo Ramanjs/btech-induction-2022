@@ -1,6 +1,7 @@
 import '../scss/home.scss';
 import inductionlogo from '../assets/induction-logo.svg';
 import SouthIcon from '@mui/icons-material/South';
+import Slideshow from '../components/Slideshow';
 import { Link } from 'react-scroll';
 
 const Home = (props) => {
@@ -27,6 +28,7 @@ const Home = (props) => {
       <div className="speakers">
         <h2>Speakers</h2>
         <p>We’ve curated a set of incredibly accomplished dignatories. Let’s kick-off your college lives with a healthy dose of wisdom.</p>
+        <Slideshow />
       </div>
     </div>
   )

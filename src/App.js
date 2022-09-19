@@ -2,6 +2,9 @@ import './scss/_base.scss';
 import { useState } from 'react';
 import Home from './pages/Home';
 import Schedule from './pages/Schedule';
+import Contact from './pages/Contact';
+import Faq from './pages/Faq';
+import Team from './pages/Team';
 import Navbar from './pages/Navbar';
 import { HashRouter, Navigate, Routes, Route } from 'react-router-dom';
 
@@ -15,6 +18,9 @@ function App() {
         <Routes>
           <Route path="/home" element={<Home isBlur={isNavExpanded}/>} />
           <Route path="/schedule" element={<Schedule isBlur={isNavExpanded}/>} />
+          <Route path="/contact" element={<Contact isBlur={isNavExpanded}/>} />
+          <Route path="/faq" element={<Faq isBlur={isNavExpanded}/>} />
+          <Route path="/team" element={<Team isBlur={isNavExpanded}/>} />
           <Route
             path="*"
             element={<Navigate to="/home" replace />}
