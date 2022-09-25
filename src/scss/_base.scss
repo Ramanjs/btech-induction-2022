@@ -3,7 +3,7 @@ $clr-font: #fff;
 $clr-grey: #181818;
 $font-text: 'Anek Odia';
 $font-heading: 'Amsterdam';
-$font-size-p: 0.5rem;
+$font-size-p: 0.55rem;
 $font-size-h: 1.5rem;
 
 html {
@@ -33,13 +33,18 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 1rem 2rem;
+    font-size: $font-size-p;
+    padding: 1em 5em;
+
+    @media screen and (max-width: 768px) {
+      padding: 1em 3em;
+    }
 }
 
 @mixin heading {
     font-family: $font-heading;
-    font-weight: 400;
     font-size: $font-size-h;
+    font-weight: 400;
 }
 
 .blur {
@@ -48,6 +53,6 @@ body {
 
 @media screen and (max-width: 768px) {
   html {
-    font-size: 26px;
+    font-size: 28px;
   }
 }

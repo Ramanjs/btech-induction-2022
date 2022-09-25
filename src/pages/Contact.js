@@ -5,9 +5,11 @@ import map from '../assets/maps.png';
 const Contact = (props) => {
   return (
     <div className={props.isBlur ? "blur" : ""}>
-      <div className="contact">
-        <img src={inductionlogo} alt="induction logo" />
-        <h1>Contact</h1>
+      <div>
+        <div className="contact">
+          <img src={inductionlogo} alt="induction logo" />
+          <h1>Contact</h1>
+        </div>
       </div>
       <div className="map-container">
         <div className="map">

@@ -2,19 +2,35 @@
 
 .contact {
   @include base.container;
+  min-height: 0;
+  height: 75vh;
+  padding: 0.5rem 3rem;
   justify-content: flex-start;
-  padding: 0.5rem 1rem;
   background-image: url(../assets/contact-bg.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: 0 0;
+  //position: relative;
 
   & img {
     width: 100px;
   }
 
   & h1 {
-    font-family: base.$font-heading;
-    font-weight: 400;
+    @include base.heading;
+  }
+
+  //&::after {
+    //content: '';
+    //position: absolute;
+    //bottom: 0;
+    //width: 100%;
+    //height: 15vh;
+    //background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  //}
+
+  @media screen and (max-width: 768px) {
+    height: 50vh;
   }
 }
 
@@ -31,6 +47,7 @@
 
   & ul {
     width: 100%;
+    padding: 0;
 
     & li {
       display: flex;
@@ -45,8 +62,13 @@
         & .desc {
           font-size: 0.8 * base.$font-size-p;
           font-weight: 400;
-          max-width: 50%;;
+          max-width: 50%;
           margin-left: auto;
+
+          @media screen and (max-width: 768px) {
+            width: 90%;
+            max-width: 90%;
+          }
         }
       }
 
@@ -71,7 +93,6 @@
   @include base.container;
   align-items: flex-start;
   font-size: base.$font-size-p;
-  padding: 1rem 4rem;
   
   & h2 {
     font-size: base.$font-size-h;
@@ -103,6 +124,17 @@
       width: 550px;
       height: 350px;
       margin: 0 1rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      padding: 0;
+
+      & iframe {
+        width: 100%;
+        height: 300px;
+        margin: 1em 0;
+      }
     }
   }
 }
@@ -154,6 +186,25 @@
           font-size: 0.9 * base.$font-size-p;
           margin: 0;
         }
+
+      }
+
+      @media screen and (max-width: 768px) {
+        padding: 0;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      height: auto;
+      padding: 0;
+
+      & img {
+        width: 100%;
+      }
+
+      & div {
+        width: 100%;
       }
     }
   }
