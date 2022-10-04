@@ -1,7 +1,4 @@
 import './scss/imagecollage.scss';
-//import img1 from '../assets/home-bg-1.jpg';
-//import img2 from '../assets/home-bg-2.jpg';
-//import img3 from '../assets/home-bg-3.jpg';
 
 const ImageCollage = () => {
   return (
