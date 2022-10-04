@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <HashRouter basename="/">
+      <HashRouter>
         <Navbar isNavExpanded={isNavExpanded} setIsNavExpanded={setIsNavExpanded} />
         <Routes>
           <Route path="/home" element={<Home isBlur={isNavExpanded}/>} />

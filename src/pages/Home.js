@@ -3,7 +3,9 @@ import inductionlogo from '../assets/induction-logo.svg';
 import SouthIcon from '@mui/icons-material/South';
 import Slideshow from '../components/Slideshow';
 import { Link } from 'react-scroll';
-import imagecollage from '../assets/home-img-bg.webp';
+//import imagecollage from '../assets/home-img-bg.webp';
+import ImageCollage from '../components/ImageCollage';
+
 
 const Home = (props) => {
   return (
@@ -26,9 +28,7 @@ const Home = (props) => {
 
         <p>IIIT-Delhi is accelerating on the path of becoming one of the leading comprehensive research-led teaching institutes in India and has proven to be consistently responsive towards the evolving needs of society. The faculty members at IIIT-Delhi are among the finest in the country and are internationally recognized. Carrying out cutting-edge research is in the institutional DNA of IIIT-Delhi.</p>
       </div>
-      <div className="home-image-collage">
-        <img src={imagecollage} alt="image collage" />
-      </div>
+      <ImageCollage />
       <div className="speakers">
         <h2>Speakers</h2>
         <p>We’ve curated a set of incredibly accomplished dignatories. Let’s kick-off your college lives with a healthy dose of wisdom.</p>

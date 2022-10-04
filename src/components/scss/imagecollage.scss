@@ -1,0 +1,44 @@
+.imagecollage-container {
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+}
+
+.imagecollage {
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  min-height: 200vh;
+  transform: rotate(-15deg);
+
+  & div {
+    width: 32%;
+  }
+}
+
+@for $i from 1 through 3 {
+  .collage-img-#{$i} {
+    background-image: url('../../assets/home-bg-' + $i + '.jpg');
+    background-size: 100%;
+    @if ($i % 2 == 0) {
+      animation: imagescroll-down 15s linear infinite;
+    } @else {
+      animation: imagescroll-up 20s linear infinite;
+    } 
+  }
+}
+
+@keyframes imagescroll-down {
+  100% {
+    background-position-y: 1342px;
+  }
+}
+
+@keyframes imagescroll-up {
+  100% {
+    background-position-y: -1342px;
+  }
+}

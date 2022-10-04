@@ -1,12 +1,29 @@
-import './scss/slideshow.scss';
 import img1 from '../assets/Speaker1.png';
 import img2 from '../assets/Speaker2.png';
 import img3 from '../assets/Speaker3.png';
+import {useRef} from 'react';
+import {useEffect} from 'react';
+import '../flickity/flickity.min.css';
+import './scss/slideshow.scss';
+import Flickity from '../flickity/flickity.pkgd.js';
 
 const Slideshow = () => {
+  const slideshow = useRef(null);
+
+  useEffect(() => {
+    let flick = new Flickity(slideshow.current, {
+      cellAlign: 'center',
+      contain: true,
+      wrapAround: true,
+      autoPlay: true,
+      pageDots: false
+    });
+  });
+
+  // data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true, "autoPlay": true, "pageDots": false }'
   return (
     <div className="slideshow">
-      <div className="carousel js-flickity" data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true, "autoPlay": true, "pageDots": false }'>
+      <div ref={slideshow} className="carousel js-flickity">
         <div className="carousel-cell">
           <img src={img1} alt="speaker" />
         </div>

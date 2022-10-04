@@ -6,26 +6,6 @@ $font-heading: 'Amsterdam';
 $font-size-p: 0.55rem;
 $font-size-h: 1.5rem;
 
-html {
-  font-size: 40px;
-}
-
-body {
-  background-color: $clr-bg;
-  color: $clr-font;
-  font-family: $font-text;
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@font-face {
-  font-family: amsterdam;
-  src: url(../assets/amsterdam.ttf);
-}
-
 @mixin container {
     width: 100%;
     min-height: 100vh;
