@@ -1,4 +1,4 @@
-$animation-duration: 30s;
+$animation-duration: 50s;
 
 .imagecollage-container {
   width: 100%;
@@ -57,13 +57,13 @@ $animation-duration: 30s;
 
 @keyframes imagescroll-down {
   100% {
-    background-position-y: 1215px;
+    background-position-y: 1392px;
   }
 }
 
 @keyframes imagescroll-up {
   100% {
-    background-position-y: -1342px;
+    background-position-y: -1254px;
   }
 }
 
