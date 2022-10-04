@@ -1,3 +1,5 @@
+$animation-duration: 30s;
+
 .imagecollage-container {
   width: 100%;
   overflow: hidden;
@@ -24,21 +26,27 @@
     background-image: url('../../assets/home-bg-' + $i + '.jpg');
     background-size: 100%;
     @if ($i % 2 == 0) {
-      animation: imagescroll-down 15s linear infinite;
+      animation: imagescroll-down $animation-duration linear infinite;
     } @else {
-      animation: imagescroll-up 20s linear infinite;
+      animation: imagescroll-up $animation-duration linear infinite;
     } 
   }
 }
 
 @keyframes imagescroll-down {
   100% {
-    background-position-y: 1342px;
+    background-position-y: 1215px;
   }
 }
 
 @keyframes imagescroll-up {
   100% {
     background-position-y: -1342px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imagecollage {
+    transform: rotate(-15deg) scale(1.5);
   }
 }

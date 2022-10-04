@@ -1,5 +1,4 @@
 import '../scss/schedule.scss';
-import inductionlogo from '../assets/induction-logo.svg';
 import arrowl from '../assets/sched-left-arr.svg'
 import arrowr from '../assets/sched-right-arr.svg'
 
@@ -7,7 +6,6 @@ const Schedule = (props) => {
   return (
     <div className={props.isBlur ? "blur" : ""}>
       <div className="schedule">
-        <img src={inductionlogo} alt="induction logo" />
         <h1>Schedule</h1>
         <div className="slider">
           <img src={arrowl} alt="left arrow" />

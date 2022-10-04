@@ -3,6 +3,7 @@
 .team {
   @include base.container;
   padding: 0.5rem 1rem;
+  margin-top: 50px;
 
   & h1 {
     font-family: base.$font-heading;

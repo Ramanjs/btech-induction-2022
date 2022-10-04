@@ -1,7 +1,6 @@
 import '../scss/navbar.scss';
+import inductionlogo from '../assets/induction-logo.svg';
 import { NavLink } from 'react-router-dom';
-import close from '../assets/cross.svg';
-import hamburger from '../assets/hamburger.png';
 
 const Navbar = (props) => {
   const toggleNav = () => {
@@ -9,11 +8,17 @@ const Navbar = (props) => {
   }
 
   return (
-    <div className="navbar" style={{position: 'relative'}}>
-      {!props.isNavExpanded ? <img src={hamburger} alt="menu icon" onClick={() => props.setIsNavExpanded(!props.isNavExpanded)} className="nav-hamburger" /> : null }
-      <div className={props.isNavExpanded ? "nav-menu nav-expanded" : "nav-menu"}>
-        <ul className="nav-list">
-          <li onClick={() => toggleNav()}><img src={close} alt="close button" className="nav-close" /></li>
+    <div style={{position: 'relative'}}>
+      <div className={props.isNavExpanded ? "navbar navbar-expanded" : "navbar"}>
+        <div className="nav-icon-container">
+          <div id="nav-icon" onClick={() => toggleNav()} className={props.isNavExpanded ? "open" : ""}>
+            <span></span>
+            <span></span>
+            <span></span> 
+          </div>
+        </div>
+        <img src={inductionlogo} alt="induction logo" className={props.isNavExpanded ? "hidden" : ""}/>
+        <ul className={props.isNavExpanded ? "nav-list" : "nav-list hidden"}>
           <li><NavLink to="/home" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>Home</NavLink></li>
           <li><NavLink to="/schedule" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>Schedule</NavLink></li>
           <li><NavLink to="/contact" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>Contact</NavLink></li>

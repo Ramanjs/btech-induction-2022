@@ -1,9 +1,7 @@
 import '../scss/home.scss';
-import inductionlogo from '../assets/induction-logo.svg';
 import SouthIcon from '@mui/icons-material/South';
 import Slideshow from '../components/Slideshow';
 import { Link } from 'react-scroll';
-//import imagecollage from '../assets/home-img-bg.webp';
 import ImageCollage from '../components/ImageCollage';
 
 
@@ -11,7 +9,7 @@ const Home = (props) => {
   return (
     <div className={props.isBlur ? "blur" : ""}>
       <div className="home">
-        <img src={inductionlogo} alt="induction logo" />
+        <div></div>
         <h1>Congratulations</h1>
         <Link to="welcome" smooth={true}>
           <div>

@@ -5,29 +5,25 @@
   min-height: 0;
   height: 75vh;
   padding: 0.5rem 3rem;
-  justify-content: flex-start;
+  justify-content: center;
   background-image: url(../assets/contact-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
-  //position: relative;
-
-  & img {
-    width: 100px;
-  }
+  position: relative;
 
   & h1 {
     @include base.heading;
   }
 
-  //&::after {
-    //content: '';
-    //position: absolute;
-    //bottom: 0;
-    //width: 100%;
-    //height: 15vh;
-    //background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  //}
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  }
 
   @media screen and (max-width: 768px) {
     height: 50vh;
@@ -153,7 +149,7 @@
     height: 60vh;
     gap: 20px;
 
-    & img {
+    & iframe {
       height: 100%;
     }
 
@@ -199,7 +195,7 @@
       height: auto;
       padding: 0;
 
-      & img {
+      & iframe {
         width: 100%;
       }
 

@@ -2,6 +2,7 @@
 
 .faq {
   @include base.container;
+  margin-top: 50px;
   padding: 0.5rem 1rem;
 
   & h1 {

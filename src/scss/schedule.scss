@@ -3,6 +3,7 @@
 .schedule {
   @include base.container;
   justify-content: flex-start;
+  margin-top: 50px;
 
   & img {
     width: 100px;

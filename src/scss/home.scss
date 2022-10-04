@@ -14,7 +14,6 @@
       @include base.heading;
       align-self: flex-start;
       font-size: 1.75 * base.$font-size-h;
-      margin: 0 1em;
     }
 
     & div {
@@ -24,6 +23,7 @@
       align-items: center;
       cursor: pointer;
       position: relative;
+      z-index: 1;
 
       & p {
         margin: 0;

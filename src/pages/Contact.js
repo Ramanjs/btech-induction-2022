@@ -1,19 +1,15 @@
 import '../scss/contact.scss';
-import inductionlogo from '../assets/induction-logo.svg';
 import map from '../assets/maps.png';
 
 const Contact = (props) => {
   return (
     <div className={props.isBlur ? "blur" : ""}>
-      <div>
-        <div className="contact">
-          <img src={inductionlogo} alt="induction logo" />
-          <h1>Contact</h1>
-        </div>
+      <div className="contact">
+        <h1>Contact</h1>
       </div>
       <div className="map-container">
         <div className="map">
-          <img src={map} alt="" />
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.7958920963133!2d77.27098751497907!3d28.545854082452166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e564daac1d%3A0x2c582e340e7bc556!2sIndraprastha%20Institute%20of%20Information%20Technology%20Delhi!5e0!3m2!1sen!2sin!4v1664899681458!5m2!1sen!2sin" width="600" height="450" style={{border: "0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <div>
             <h3>Get In Touch</h3>
             <div>
