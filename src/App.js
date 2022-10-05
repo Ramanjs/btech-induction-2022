@@ -6,6 +6,7 @@ import Contact from './pages/Contact';
 import Faq from './pages/Faq';
 import Team from './pages/Team';
 import Navbar from './pages/Navbar';
+import Footer from './components/Footer';
 import { HashRouter, Navigate, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             element={<Navigate to="/home" replace />}
           />
         </Routes>
+        <Footer />
       </HashRouter>
     </div>
   );
