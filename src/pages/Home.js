@@ -1,5 +1,5 @@
 import '../scss/home.scss';
-import SouthIcon from '@mui/icons-material/South';
+import beginarrow from '../assets/begin-journey-arrow.svg';
 import Slideshow from '../components/Slideshow';
 import { Link } from 'react-scroll';
 import ImageCollage from '../components/ImageCollage';
@@ -14,7 +14,7 @@ const Home = (props) => {
         <Link to="welcome" smooth={true}>
           <div>
             <p>Begin the journey.</p>
-            <SouthIcon />
+            <img src={beginarrow} alt="arrow" />
           </div>
         </Link>
       </div>

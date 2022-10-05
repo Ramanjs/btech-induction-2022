@@ -24,15 +24,22 @@
       cursor: pointer;
       position: relative;
       z-index: 1;
+      animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
+      @keyframes bounce {
+        50% {
+          transform: translateY(-5px);
+        }
+      }
+ 
       & p {
         margin: 0;
         font-size: base.$font-size-p;
       }
-    }
 
-    img {
-      width: 100px;
+      & img {
+        height: 10vh;
+     }
     }
 
     &::after {
