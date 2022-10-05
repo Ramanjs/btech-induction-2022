@@ -31,7 +31,7 @@
             margin: 0;
             font-family: base.$font-heading;
             font-weight: 400;
-            font-size: 1.25 * base.$font-size-p;
+            font-size: calc(1.25 * base.$font-size-p);
             padding-left: 2em;
        }
     }

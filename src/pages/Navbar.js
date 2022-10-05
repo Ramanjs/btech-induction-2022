@@ -10,8 +10,8 @@ const Navbar = (props) => {
   return (
     <div style={{position: 'relative'}}>
       <div className={props.isNavExpanded ? "navbar navbar-expanded" : "navbar"}>
-        <div className="nav-icon-container">
-          <div id="nav-icon" onClick={() => toggleNav()} className={props.isNavExpanded ? "open" : ""}>
+        <div className="nav-icon-container" onClick={() => toggleNav()}>
+          <div id="nav-icon" className={props.isNavExpanded ? "open" : ""}>
             <span></span>
             <span></span>
             <span></span> 
@@ -25,6 +25,7 @@ const Navbar = (props) => {
           <li><NavLink to="/faq" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>FAQs</NavLink></li>
           <li><NavLink to="/team" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>Our Team</NavLink></li>
         </ul>
+        <div></div>
       </div>
     </div>
   )

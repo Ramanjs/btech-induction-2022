@@ -4,7 +4,6 @@
   @include base.container;
   min-height: 0;
   height: 75vh;
-  padding: 0.5rem 3rem;
   justify-content: center;
   background-image: url(../assets/contact-bg.png);
   background-repeat: no-repeat;
@@ -36,7 +35,7 @@
   background-color: #171717;
 
   & h2 {
-    font-size: 1rem;
+    font-size: base.$font-size-h;
     font-weight: 700;
     text-align: center;
   }
@@ -56,7 +55,7 @@
         font-size: base.$font-size-p;
 
         & .desc {
-          font-size: 0.8 * base.$font-size-p;
+          font-size: 0.75em;
           font-weight: 400;
           max-width: 50%;
           margin-left: auto;
@@ -161,9 +160,10 @@
       align-items: flex-start;
       justify-content: space-between;
       padding: 0;
+      font-size: base.$font-size-h;
 
       & h3 {
-        font-size: 0.6 * base.$font-size-h;
+        font-size: 0.5em;
         margin: 0;
       }
 
@@ -172,14 +172,15 @@
         padding: 0;
         height: auto;
         justify-content: center;
+        font-size: base.$font-size-p;
 
         & h4 {
-          font-size: 0.5 * base.$font-size-h;
+          font-size: 1em;
           margin: 0;
         }
 
         & p {
-          font-size: 0.9 * base.$font-size-p;
+          font-size: 0.75em;
           margin: 0;
         }
 

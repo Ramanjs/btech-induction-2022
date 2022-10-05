@@ -3,8 +3,8 @@ $clr-font: #fff;
 $clr-grey: #181818;
 $font-text: 'Anek Odia';
 $font-heading: 'Amsterdam';
-$font-size-p: 0.55rem;
-$font-size-h: 1.5rem;
+$font-size-p: calc(0.60rem + 1vw);
+$font-size-h: calc(1.5rem + 2vw);
 
 @mixin container {
     width: 100%;
@@ -14,7 +14,7 @@ $font-size-h: 1.5rem;
     justify-content: flex-start;
     align-items: center;
     font-size: $font-size-p;
-    padding: 1em 5em;
+    padding: 1em 6em;
 
     @media screen and (max-width: 768px) {
       padding: 1em 3em;

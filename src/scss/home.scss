@@ -13,7 +13,7 @@
     & h1 {
       @include base.heading;
       align-self: flex-start;
-      font-size: 1.75 * base.$font-size-h;
+      font-size: calc(1.75 * base.$font-size-h);
     }
 
     & div {
@@ -54,7 +54,6 @@
     @media screen and (max-width: 768px) {
       background-position: -100% 0%;
       & h1 {
-        font-size: 2rem;
         margin: 0;
         align-self: center;
       }
