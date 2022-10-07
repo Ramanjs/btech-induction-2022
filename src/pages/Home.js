@@ -3,11 +3,17 @@ import beginarrow from '../assets/begin-journey-arrow.svg';
 import Slideshow from '../components/Slideshow';
 import { Link } from 'react-scroll';
 import ImageCollage from '../components/ImageCollage';
+import Img from 'react-optimized-image';
+import backgroundImg from '../assets/home-bg.png';
 
 
 const Home = (props) => {
   return (
     <div className={props.isBlur ? "blur" : ""}>
+      {/* Background */}
+      <div className="home-bg-container">
+        <Img src={backgroundImg} webp sizes={[500]} className="home-bg-img"/>
+      </div>
       <div className="home">
         <div></div>
         <h1>Congratulations</h1>
@@ -27,11 +33,11 @@ const Home = (props) => {
         <p>IIIT-Delhi is accelerating on the path of becoming one of the leading comprehensive research-led teaching institutes in India and has proven to be consistently responsive towards the evolving needs of society. The faculty members at IIIT-Delhi are among the finest in the country and are internationally recognized. Carrying out cutting-edge research is in the institutional DNA of IIIT-Delhi.</p>
       </div>
       <ImageCollage />
-      <div className="speakers">
+      {/*<div className="speakers">
         <h2>Speakers</h2>
         <p>We’ve curated a set of incredibly accomplished dignatories. Let’s kick-off your college lives with a healthy dose of wisdom.</p>
         <Slideshow />
-      </div>
+      </div> */}
       <div className="youmadeit">
         <h2>You’ve made it.</h2>
         <p>You've made it here. This is a new chapter of your life.</p>

@@ -1,15 +1,23 @@
 @use 'base';
 @use 'sass:math';
 
+.home-bg-img {
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  max-width: 100%;
+  right: 0;
+}
+
 .home {
     @include base.container;
     justify-content: space-between;
     padding-top: 0.5em;
-    background-image: url(../assets/home-bg.png);
-    background-repeat: no-repeat;
-    background-position: 100% 0%;
+    //background-image: url(../assets/home-bg.png);
+    //background-repeat: no-repeat;
+    //background-position: 100% 0%;
     //background-size: math.div(500, 704) * 100vh;
-    background-size: auto 100vh;
+    //background-size: auto 100vh;
 
     & h1 {
       @include base.heading;
@@ -44,7 +52,7 @@
     }
 
     @media screen and (max-width: 768px) {
-      background-position: -50% 0%;
+      //background-position: -50% 0%;
       & h1 {
         margin: 0;
         align-self: center;
@@ -115,4 +123,10 @@
   & p {
     font-size: base.$font-size-p;
   }
+}
+
+@media screen and (max-width: 820px) {
+  //.home-bg-img {
+    //right: -50%;
+  //}
 }
