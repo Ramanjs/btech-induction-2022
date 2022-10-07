@@ -1,10 +1,10 @@
 import '../scss/home.scss';
 import beginarrow from '../assets/begin-journey-arrow.svg';
-import Slideshow from '../components/Slideshow';
+//import Slideshow from '../components/Slideshow';
 import { Link } from 'react-scroll';
 import ImageCollage from '../components/ImageCollage';
 import Img from 'react-optimized-image';
-import backgroundImg from '../assets/home-bg.png';
+import backgroundImg from '../assets/home-bg.jpg';
 
 
 const Home = (props) => {
