@@ -5,10 +5,11 @@
     @include base.container;
     justify-content: space-between;
     padding-top: 0.5em;
-    background-image: url(../assets/home-bg.webp);
+    background-image: url(../assets/home-bg.png);
     background-repeat: no-repeat;
     background-position: 100% 0%;
-    background-size: math.div(579, 1024) * 100vh;
+    //background-size: math.div(500, 704) * 100vh;
+    background-size: auto 100vh;
 
     & h1 {
       @include base.heading;
@@ -42,17 +43,8 @@
       }
     }
 
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 15vh;
-      background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-    }
-
     @media screen and (max-width: 768px) {
-      background-position: -100% 0%;
+      background-position: -50% 0%;
       & h1 {
         margin: 0;
         align-self: center;
