@@ -15,6 +15,7 @@ const Navbar = (props) => {
             <span></span>
             <span></span>
             <span></span> 
+            <span></span> 
           </div>
         </div>
         <img src={inductionlogo} alt="induction logo" className={props.isNavExpanded ? "hidden" : ""}/>
