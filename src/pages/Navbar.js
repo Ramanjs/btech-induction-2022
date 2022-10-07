@@ -21,10 +21,10 @@ const Navbar = (props) => {
         <img src={inductionlogo} alt="induction logo" className={props.isNavExpanded ? "hidden" : ""}/>
         <ul className={props.isNavExpanded ? "nav-list" : "nav-list hidden"}>
           <li><NavLink to="/home" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>Home</NavLink></li>
-          <li><NavLink to="/schedule" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>Schedule</NavLink></li>
+          {/*<li><NavLink to="/schedule" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>Schedule</NavLink></li>*/}
           <li><NavLink to="/contact" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>Contact</NavLink></li>
-          <li><NavLink to="/faq" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>FAQs</NavLink></li>
-          <li><NavLink to="/team" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>Our Team</NavLink></li>
+          {/*<li><NavLink to="/faq" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>FAQs</NavLink></li>*/}
+          {/*<li><NavLink to="/team" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>Our Team</NavLink></li>*/}
         </ul>
         <div style={{width: '45px'}}></div>
       </div>

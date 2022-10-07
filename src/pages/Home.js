@@ -12,7 +12,7 @@ const Home = (props) => {
     <div className={props.isBlur ? "blur" : ""}>
       {/* Background */}
       <div className="home-bg-container">
-        <Img src={backgroundImg} sizes={[500]} className="home-bg-img" webp={true} />
+        <Img src={backgroundImg} webp={true} sizes={[500]} className="home-bg-img" />
       </div>
       <div className="home">
         <div></div>

@@ -18,10 +18,10 @@ function App() {
         <Navbar isNavExpanded={isNavExpanded} setIsNavExpanded={setIsNavExpanded} />
         <Routes>
           <Route path="/home" element={<Home isBlur={isNavExpanded}/>} />
-          <Route path="/schedule" element={<Schedule isBlur={isNavExpanded}/>} />
+          {/*<Route path="/schedule" element={<Schedule isBlur={isNavExpanded}/>} /> */}
           <Route path="/contact" element={<Contact isBlur={isNavExpanded}/>} />
-          <Route path="/faq" element={<Faq isBlur={isNavExpanded}/>} />
-          <Route path="/team" element={<Team isBlur={isNavExpanded}/>} />
+          {/*<Route path="/faq" element={<Faq isBlur={isNavExpanded}/>} />*/}
+          {/*<Route path="/team" element={<Team isBlur={isNavExpanded}/>} />*/}
           <Route
             path="*"
             element={<Navigate to="/home" replace />}
