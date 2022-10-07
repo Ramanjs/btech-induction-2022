@@ -35,12 +35,12 @@
 .iiitd-address {
   display: flex;
   flex-direction: column;
-  max-width: 40%;
+  max-width: 35%;
   align-items: flex-start;
     font-size: base.$font-size-p;
 
   & img {
-    width: 320px;
+    width: 300px;
     fill: base.$clr-bg;
   }
 
