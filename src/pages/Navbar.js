@@ -26,7 +26,7 @@ const Navbar = (props) => {
           <li><NavLink to="/faq" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>FAQs</NavLink></li>
           <li><NavLink to="/team" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>Our Team</NavLink></li>
         </ul>
-        <div></div>
+        <div style={{width: '50px'}}></div>
       </div>
     </div>
   )
