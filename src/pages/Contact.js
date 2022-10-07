@@ -1,5 +1,4 @@
 import '../scss/contact.scss';
-import map from '../assets/maps.png';
 
 const Contact = (props) => {
   return (
