@@ -113,73 +113,14 @@
     }
 }
 
-.animations {
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 10px 20px;
+.youmadeit {
+  @include base.container;
 
-  & .c {
-    stroke-dasharray: 500;
-    animation: c 1s linear;
+  & h2 {
+    @include base.heading;
   }
 
-  @keyframes c {
-    0% {
-      stroke-dashoffset: 500;
-    }
-
-    20% {
-      stroke-dashoffset: 0;
-    }
-  }
-
-  & .o {
-    stroke-dasharray: 70;
-    animation: o 1s linear;
-  }
-
-  @keyframes o {
-    0%, 20% {
-      stroke-dashoffset: 70;
-    }
-
-    40% {
-      stroke-dashoffset: 0;
-    }
-  }
-  
-  & .ngr {
-    stroke-dasharray: 500;
-    animation: o 1s linear;
-  }
-
-  @keyframes o {
-    0%, 40% {
-      stroke-dashoffset: 500;
-    }
-
-    100% {
-      stroke-dashoffset: 0;
-    }
-  }
-
-  & .congo {
-    stroke-dasharray: 2500;
-    animation: congo 2.5s linear;
-  }
-
-  @keyframes congo {
-    0% {
-      stroke-dashoffset: 2500;
-      opacity: 1;
-    }
-
-    100% {
-      stroke-dashoffset: 0;
-      opacity: 0;
-    }
+  & p {
+    font-size: base.$font-size-p;
   }
 }
-
