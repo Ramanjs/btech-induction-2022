@@ -3,7 +3,6 @@ import beginarrow from '../assets/begin-journey-arrow.svg';
 //import Slideshow from '../components/Slideshow';
 import { Link } from 'react-scroll';
 import ImageCollage from '../components/ImageCollage';
-import Img from 'react-optimized-image';
 import backgroundImg from '../assets/home-bg.jpg';
 
 
@@ -12,7 +11,7 @@ const Home = (props) => {
     <div className={props.isBlur ? "blur" : ""}>
       {/* Background */}
       <div className="home-bg-container">
-        <Img src={backgroundImg} webp={true} sizes={[500]} className="home-bg-img" />
+        <img src={backgroundImg} className="home-bg-img" />
       </div>
       <div className="home">
         <div></div>

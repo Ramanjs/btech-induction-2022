@@ -11,7 +11,7 @@ const Footer = () => {
       </div>
       <div className="links">
         <p>Website Designed & Developed By</p>
-        <h2><a href="https://www.linkedin.com/in/adityagirdhar/">Aditya Girdhar</a> & <a href="https://www.linkedin.com/in/ramanjeet-singh-340754229/">Ramanjeet Singh</a></h2>
+        <h2><a href="https://linktr.ee/adityagirdhar">Aditya Girdhar</a> & <a href="https://www.linkedin.com/in/ramanjeet-singh-340754229/">Ramanjeet Singh</a></h2>
       </div>
     </div>
   )
