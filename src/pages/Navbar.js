@@ -18,7 +18,7 @@ const Navbar = (props) => {
             <span></span> 
           </div>
         </div>
-        <img src={inductionlogo} alt="induction logo" className={props.isNavExpanded ? "hidden" : ""}/>
+        <img src={inductionlogo} alt="induction logo" className={props.isNavExpanded ? "hidden" : ""} onLoad={() => props.setIsNavLoaded(true)}/>
         <ul className={props.isNavExpanded ? "nav-list" : "nav-list hidden"}>
           <li><NavLink to="/home" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>Home</NavLink></li>
           {/*<li><NavLink to="/schedule" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>Schedule</NavLink></li>*/}

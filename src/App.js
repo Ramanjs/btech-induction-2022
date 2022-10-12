@@ -11,13 +11,14 @@ import { HashRouter, Navigate, Routes, Route } from 'react-router-dom';
 
 function App() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const [isNavLoaded, setIsNavLoaded] = useState(false)
 
   return (
     <div className="App">
       <HashRouter>
-        <Navbar isNavExpanded={isNavExpanded} setIsNavExpanded={setIsNavExpanded} />
+        <Navbar isNavExpanded={isNavExpanded} setIsNavExpanded={setIsNavExpanded} setIsNavLoaded={setIsNavLoaded}/>
         <Routes>
-          <Route path="/home" element={<Home isBlur={isNavExpanded}/>} />
+          <Route path="/home" element={<Home isBlur={isNavExpanded} isNavLoaded={isNavLoaded}/>} />
           {/*<Route path="/schedule" element={<Schedule isBlur={isNavExpanded}/>} /> */}
           <Route path="/contact" element={<Contact isBlur={isNavExpanded}/>} />
           {/*<Route path="/faq" element={<Faq isBlur={isNavExpanded}/>} />*/}

@@ -9,20 +9,20 @@ import {useState} from 'react';
 
 
 const Home = (props) => {
-  const [isLoaded, setIsLoaded] = useState(false)
+  const [isBgLoaded, setIsBgLoaded] = useState(false)
 
   return (
     <div className={props.isBlur ? "blur" : ""}>
       {/* Background */}
       <div className="home-bg-container">
-        <img src={backgroundImg} className="home-bg-img" onLoad={() => setIsLoaded(true)}/>
+        <img src={backgroundImg} className="home-bg-img" onLoad={() => setIsBgLoaded(true)} style={props.isNavLoaded ? {} : {display: 'hidden'}}/>
       </div>
       <div className="home">
         <div></div>
-        {isLoaded ? <Congrats className="congrats" /> : null}
+        {isBgLoaded ? <Congrats className="congrats" /> : null}
         {/* <h1>Congratulations</h1> */}
         <Link to="welcome" smooth={true}>
-          <div className="begin">
+          <div className="begin" style={isBgLoaded ? {} : {display: 'hidden'}}>
             <p>Begin the journey.</p>
             <img src={beginarrow} alt="arrow" />
           </div>
