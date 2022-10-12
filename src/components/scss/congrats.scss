@@ -17,7 +17,9 @@
 // 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
 
 $strokes: 500, 70, 100, 450, 100, 100, 200, 200, 500, 100, 200, 100, 100, 100, 200, 50, 50, 5;
-$duration: math.div(1, 18) * 5s;
+$duration: math.div(1, 18) * 4s;
+
+// this loop shit doesnt seem to be working so ive hardcoded it
 
 //@each $stroke in $strokes {
   //$i: #{index($strokes, $stroke)};
