@@ -5,21 +5,24 @@ import { Link } from 'react-scroll';
 import ImageCollage from '../components/ImageCollage';
 import backgroundImg from '../assets/home-bg.jpg';
 import Congrats from '../components/Congrats';
+import {useState} from 'react';
 
 
 const Home = (props) => {
+  const [isLoaded, setIsLoaded] = useState(false)
+
   return (
     <div className={props.isBlur ? "blur" : ""}>
       {/* Background */}
       <div className="home-bg-container">
-        <img src={backgroundImg} className="home-bg-img" />
+        <img src={backgroundImg} className="home-bg-img" onLoad={() => setIsLoaded(true)}/>
       </div>
       <div className="home">
         <div></div>
-        <Congrats className="congrats" />
+        {isLoaded ? <Congrats className="congrats" /> : null}
         {/* <h1>Congratulations</h1> */}
         <Link to="welcome" smooth={true}>
-          <div>
+          <div className="begin">
             <p>Begin the journey.</p>
             <img src={beginarrow} alt="arrow" />
           </div>

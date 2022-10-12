@@ -20,7 +20,7 @@
       font-size: calc(1.75 * base.$font-size-h);
     }
 
-    & div {
+    & .begin {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
