@@ -130,3 +130,99 @@
     //right: -50%;
   //}
 }
+
+.congrats-animation {
+  @include base.container;
+}
+
+
+
+//.c {
+  //stroke-dasharray: 500;
+  //animation: c 1s linear;
+//}
+
+//@keyframes c {
+  //0% {
+    //stroke-dashoffset: 500;
+  //}
+
+  //16% {
+    //stroke-dashoffset: 0;
+  //}
+//}
+
+//.o{
+  //stroke-dasharray: 70;
+  //animation: o 1s linear;
+//}
+
+//@keyframes o {
+  //0%, 16% {
+    //stroke-dashoffset: 70;
+  //}
+
+  //32% {
+    //stroke-dashoffset: 0;
+  //}
+//}
+
+//.n{
+  //stroke-dasharray: 110;
+  //animation: n 1s linear;
+//}
+
+//@keyframes n {
+  //0%, 32% {
+    //stroke-dashoffset: 110;
+  //}
+
+  //48% {
+    //stroke-dashoffset: 0;
+  //}
+//}
+
+//.g{
+  //stroke-dasharray: 400;
+  //animation: g 1s linear;
+//}
+
+//@keyframes g {
+  //0%, 48% {
+    //stroke-dashoffset: 400;
+  //}
+
+  //62% {
+    //stroke-dashoffset: 0;
+  //}
+//}
+
+//.r{
+  //stroke-dasharray: 100;
+  //animation: r 1s linear;
+//}
+
+//@keyframes r {
+  //0%, 62% {
+    //stroke-dashoffset: 100;
+  //}
+
+  //78% {
+    //stroke-dashoffset: 0;
+  //}
+//}
+
+//.a{
+  //stroke-dasharray: 100;
+  //animation: a 1s linear;
+//}
+
+//@keyframes a {
+  //0%, 78% {
+    //stroke-dashoffset: 100;
+  //}
+
+  //100% {
+    //stroke-dashoffset: 0;
+  //}
+//}
