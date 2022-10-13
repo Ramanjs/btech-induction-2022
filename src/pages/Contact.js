@@ -36,7 +36,7 @@ const Contact = (props) => {
           <li className="mg-l"><p className="right">Placement</p><p className="left">admin-placement@iiitd.ac.in</p></li>
           <li className="mg-l"><p className="right">Website</p><p className="left">admin-web@iiitd.ac.in</p></li>
           <li><p className="right">Student Council</p><p className="left">studentcouncil@iiitd.ac.in</p></li>
-          <li><p className="right"><p className="desc">Student Council Student Council is the main body representing students in all student related matters in the Institute.</p></p><p className="left">secy-sc@iiitd.ac.in</p></li>
+          <li><p className="right"><p className="desc">Student Council is the main body representing students in all student related matters in the Institute.</p></p><p className="left">secy-sc@iiitd.ac.in</p></li>
           <li className="mg-l"><p className="right">Security</p><p className="left">+91 9868244868 || +91 11 26907592 or Extn. 592</p></li>
           <li className="mg-l"><p className="right">IT Dept.</p><p className="left">+91 11 26907576 or Extn. 576</p></li>
           <li className="mg-l"><p className="right">FMS</p><p className="left">+91 11 26907576 or Extn. 576</p></li>
