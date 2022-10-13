@@ -15,14 +15,15 @@ const Home = (props) => {
     <div className={props.isBlur ? "blur" : ""}>
       {/* Background */}
       <div className="home-bg-container">
-        <img src={backgroundImg} className="home-bg-img" onLoad={() => setIsBgLoaded(true)} style={props.isNavLoaded ? {} : {display: 'hidden'}}/>
+        <img src={backgroundImg} className={isBgLoaded ? "home-bg-img fadein" : "home-bg-img"} onLoad={() => setIsBgLoaded(true)} style={props.isNavLoaded ? {} : {display: 'hidden'}}/>
       </div>
+
       <div className="home">
         <div></div>
         {isBgLoaded ? <Congrats className="congrats" /> : null}
         {/* <h1>Congratulations</h1> */}
         <Link to="welcome" smooth={true}>
-          <div className="begin" style={isBgLoaded ? {} : {display: 'hidden'}}>
+          <div className={isBgLoaded ? "begin fadein" : "begin"} style={isBgLoaded ? {} : {display: 'hidden'}}>
             <p>Begin the journey.</p>
             <img src={beginarrow} alt="arrow" />
           </div>
