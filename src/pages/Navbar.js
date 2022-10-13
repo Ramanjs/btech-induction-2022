@@ -8,7 +8,7 @@ const Navbar = (props) => {
   }
 
   return (
-    <div style={{position: 'relative'}}>
+    <div style={{position: 'relative'}} className={props.setIsNavLoaded ? "navbar-container fadein" : "navbar-container"}>
       <div className={props.isNavExpanded ? "navbar navbar-expanded" : "navbar"}>
         <div className="nav-icon-container" onClick={() => toggleNav()}>
           <div id="nav-icon" className={props.isNavExpanded ? "open" : ""}>
