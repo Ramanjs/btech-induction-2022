@@ -3,30 +3,27 @@
 .contact {
   @include base.container;
   min-height: 0;
-  height: 75vh;
+  height: 50vh;
+  margin-top: 50px;
   justify-content: center;
-  background-image: url(../assets/contact-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 0;
-  position: relative;
+  //background-image: url(../assets/contact-bg.jpg);
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  //background-position: 0 0;
+  //position: relative;
 
   & h1 {
     @include base.heading;
   }
 
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  }
-
-  @media screen and (max-width: 768px) {
-    height: 50vh;
-  }
+  //&::after {
+    //content: '';
+    //position: absolute;
+    //bottom: 0;
+    //width: 100%;
+    //height: 100px;
+    //background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  //}
 }
 
 .imp-contacts {

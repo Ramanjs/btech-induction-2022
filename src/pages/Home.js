@@ -47,7 +47,7 @@ const Home = (props) => {
         <h2>You’ve made it.</h2>
         <p>You've made it here. This is a new chapter of your life.</p>
         <p>IIIT Delhi is the epicentre of innovation and excellence in all intellectual pursuits, and we're thrilled to welcome you into our tribe. We believe in excellence and academic rigour, and all the things you'll cherish if you qualified the trials to be eligible for a seat at this prestigious institution.</p>
-        <p>We hope our efforts in this Induction program serve their purpose of introducing you to the craziest engineering school of the country, and we hope you share our enthusiam for using technology to make an impact in the world.</p>
+        <p>We hope our efforts in this Induction program serve their purpose of introducing you to the craziest engineering school of the country, and we hope you share our enthusiasm for using technology to make an impact in the world.</p>
         <p>Wishing you luck before you embark on this marvellous journey.
 May the force be with you. </p>
       </div>

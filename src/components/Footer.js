@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="iiitd-address">
-        <img src={iiitdlogo} alt="iiitd" />
+        <a href="https://www.iiitd.ac.in"><img src={iiitdlogo} alt="iiitd" /></a>
         <span>Okhla Industrial Estate, Phase III, near Govind Puri Metro Station</span>
         <span>New Delhi, Delhi 110020</span>
       </div>
