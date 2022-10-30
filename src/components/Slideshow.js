@@ -1,13 +1,13 @@
-import img1 from '../assets/Speaker1.png';
-import img2 from '../assets/Speaker2.png';
-import img3 from '../assets/Speaker3.png';
+//import img1 from '../assets/Speaker1.png';
+//import img2 from '../assets/Speaker2.png';
+//import img3 from '../assets/Speaker3.png';
 import {useRef} from 'react';
 import {useEffect} from 'react';
 import '../flickity/flickity.min.css';
 import './scss/slideshow.scss';
 import Flickity from '../flickity/flickity.pkgd.js';
 
-const Slideshow = () => {
+const Slideshow = (props) => {
   const slideshow = useRef(null);
 
   useEffect(() => {
@@ -15,7 +15,7 @@ const Slideshow = () => {
       cellAlign: 'center',
       contain: true,
       wrapAround: true,
-      autoPlay: true,
+      autoPlay: props.slideTime,
       pageDots: false
     });
   });
@@ -24,16 +24,22 @@ const Slideshow = () => {
   return (
     <div className="slideshow">
       <div ref={slideshow} className="carousel js-flickity">
-        <div className="carousel-cell">
-          <img src={img1} alt="speaker" />
+        {/*<div className="carousel-cell">
+            <img src={img1} alt="speaker" />
+          </div>
+          <div className="carousel-cell">
+            <img src={img2} alt="speaker" />
+          </div>
+          <div className="carousel-cell">
+            <img src={img3} alt="speaker" />
+          </div>*/}
+        {props.items.map(item => (
+          <div className="carousel-cell">
+            <img src={require('../assets/team/' + props.prefix + item.split(' ').join('-').toLowerCase() + '.jpg')} alt="member photo"/>
+            <span>{item}</span>
+          </div>
+        ))}
         </div>
-        <div className="carousel-cell">
-          <img src={img2} alt="speaker" />
-        </div>
-        <div className="carousel-cell">
-          <img src={img3} alt="speaker" />
-        </div>
-      </div>
     </div>
   )
 }
