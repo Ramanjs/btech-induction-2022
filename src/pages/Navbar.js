@@ -23,7 +23,7 @@ const Navbar = (props) => {
           <li><NavLink to="/home" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>Home</NavLink></li>
           <li><NavLink to="/schedule" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>Schedule</NavLink></li>
           <li><NavLink to="/contact" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>Contact</NavLink></li>
-          {/*<li><NavLink to="/faq" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>FAQs</NavLink></li>*/}
+          <li><NavLink to="/info" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>Important Info</NavLink></li>
           <li><NavLink to="/team" onClick={() => toggleNav()} className={({ isActive }) => isActive ? "nav-active" : ""}>Our Team</NavLink></li>
         </ul>
         <div style={{width: '45px'}}></div>
