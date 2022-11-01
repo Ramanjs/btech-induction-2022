@@ -36,7 +36,7 @@ const Slideshow = (props) => {
         {props.items.map(item => (
           <div className="carousel-cell">
             <img src={require('../assets/' + props.prefix + item.split(' ').join('-').toLowerCase() + '.jpg')} alt="member photo"/>
-            {props.name ? <span>{item}</span> : null}
+            {props.name ? <span>{item.includes("Mohit Bansal") ? item.slice(0, item.length - 2) : item}</span> : null}
           </div>
         ))}
         </div>

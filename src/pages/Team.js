@@ -1,6 +1,7 @@
 import '../scss/team.scss';
 import OSA from '../data/OSA';
 import OC from '../data/OC';
+import Mentors from '../data/Mentors';
 import Slideshow from '../components/Slideshow';
 import raman from '../assets/team/ramanjeet-singh.jpg';
 import aditya from '../assets/team/aditya-girdhar.jpg';
@@ -16,6 +17,8 @@ const Team = (props) => {
         <Slideshow slideTime={1500} items={OSA} prefix="team/" name={true}/>
         <h2 className="line-break">Induction Organising Committee</h2>
         <Slideshow slideTime={1500} items={OC} prefix="team/oc/" name={true}/>
+        <h2 className="line-break">Volunteers</h2>
+        <Slideshow slideTime={1500} items={Mentors} prefix="team/volunteers/" name={true}/>
         <div className="website-creators">
           <h2 className="line-break">Website Designer & Developer</h2>
           <div className="creator-cards">
