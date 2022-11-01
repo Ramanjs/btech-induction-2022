@@ -7,7 +7,10 @@ import backgroundImg from '../assets/home-bg.jpg';
 import Congrats from '../components/Congrats';
 import {useState} from 'react';
 import speakers from '../data/Speakers';
-
+import img1 from '../assets/speakers/speaker-1.jpg';
+import img2 from '../assets/speakers/speaker-2.jpg';
+import img3 from '../assets/speakers/speaker-3.jpg';
+import Fade from 'react-reveal/Fade';
 
 const Home = (props) => {
   const [isBgLoaded, setIsBgLoaded] = useState(false)
@@ -42,7 +45,18 @@ const Home = (props) => {
       <div className="speakers">
         <h2>Keynotes</h2>
         <p>We’ve curated a set of incredibly accomplished dignatories. Let’s kick-off your college lives with a healthy dose of wisdom.</p>
-        <Slideshow slideTime={3000} items={speakers} prefix="speakers/"/>
+        {/*<Slideshow slideTime={3000} items={speakers} prefix="speakers/"/> */}
+      </div>
+      <div className="speakers-images">
+        <Fade right>
+          <img src={img1} className="speaker-image"/>
+        </Fade>
+        <Fade left>
+          <img src={img2} className="speaker-image"/>
+        </Fade>
+        <Fade right>
+          <img src={img3} className="speaker-image"/>
+        </Fade>
       </div>
       <div className="youmadeit">
         <h2>You’ve made it.</h2>
@@ -57,8 +71,3 @@ May the force be with you. </p>
 }
 
 export default Home;
-
-{/* 500, 70, 100, 450, 100, 
-100, 200, 200, 500, 100, 
-200, 100, 100, 100, 200, 
-50, 50, 5; */}
