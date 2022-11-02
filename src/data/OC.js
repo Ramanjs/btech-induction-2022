@@ -9,7 +9,6 @@ const OC = [
   "Hribhav",
   "Jayan",
   "Khyati",
-  "Manan",
   "Mudit",
   "Neev",
   "Rishit Saharan",

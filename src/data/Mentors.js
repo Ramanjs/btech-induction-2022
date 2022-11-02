@@ -35,6 +35,12 @@ const Mentors = [
   "Ujjwal Rastogi",
   "Akshansh",
   "Srishti Singh",
+  "Agamdeep Singh",
+  "Harshita Srinivas",
+  "Hiren Arvind K",
+  "Kunal Sapra",
+  "Mahima Chopra",
+  "Shelly Gupta",
 ];
 
 export default Mentors;
